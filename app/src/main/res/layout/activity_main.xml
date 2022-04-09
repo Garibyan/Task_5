@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    android:padding="10dp"
+    android:scaleType="centerCrop"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        app:cardBackgroundColor="@color/card_view_bg"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:weightSum="4">
+
+            <EditText
+                android:id="@+id/edtRuningDistance"
+                style="@style/edt_style"
+                android:hint="@string/edt_run_distance" />
+
+            <EditText
+                android:id="@+id/edtSwimmingDistance"
+                style="@style/edt_style"
+                android:layout_marginTop="5dp"
+                android:hint="@string/edt_swimm_distance" />
+
+            <EditText
+                android:id="@+id/edtTakenColories"
+                style="@style/edt_style"
+                android:layout_marginTop="5dp"
+                android:hint="@string/edt_taken_colories" />
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_btn"
+                android:text="@string/btn_save"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:weightSum="4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardView">
+
+        <TextView
+            android:id="@+id/tvRunningSum"
+            style="@style/tv_style" />
+
+        <TextView
+            android:id="@+id/tvAvgRunDis"
+            style="@style/tv_style" />
+
+        <TextView
+            android:id="@+id/tvAvgSwimmDis"
+            style="@style/tv_style" />
+
+        <TextView
+            android:id="@+id/tvAvgTakenColories"
+            style="@style/tv_style" />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

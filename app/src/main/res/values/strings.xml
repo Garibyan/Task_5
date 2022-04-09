@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Task_5</string>
+    <string name="edt_run_distance">Enter running distance</string>
+    <string name="edt_swimm_distance">Enter swimming distance</string>
+    <string name="edt_taken_colories">Enter taken colories</string>
+    <string name="btn_save">Save</string>
+    <string name="info_added">Info added</string>
+</resources>
